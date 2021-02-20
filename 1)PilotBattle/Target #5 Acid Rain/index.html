@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sefaekici">
+    <title>Acid Rain</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            width: 400px;
+            height: 300px;
+            background-color: #0B2429;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .safe-area{
+            width: 95%;
+            height: 95%;
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            transform: rotateZ(45deg);
+            background-color: #F3AC3C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+
+        }
+        .circle-first{
+            right: -50px;
+            top:30px;
+        }
+
+        .circle-last{
+            left: -50px;
+            bottom: 50px;
+        }
+        .circle-light{
+            background-color:#998235;
+            top: -10px;
+        }
+
+        .triangle{
+            width: 50%;
+            height: 50%;
+            background-color:#F3AC3C;
+            transform: rotateZ(45deg);
+            position: absolute;
+            top:-10px;
+        }
+
+        .triangle-light{
+            background-color: #998235;
+        }
+
+
+       
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="safe-area">
+            
+            <div class="circle circle-first">
+               
+            </div>
+            <div class="circle circle-light">
+              <div class="triangle triangle-light"></div>
+            </div>
+            <div class="circle circle-last">
+                <div class="triangle"></div>
+            </div>
+
+
+        </div>
+      
+       
+
+    </div>
+
+    
+</body>
+</html>
